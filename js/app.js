@@ -1,6 +1,7 @@
+const hamburgerMenu = document.querySelector(".hamburger-menu");
+const nav = document.querySelector(".navbar-links");
+
 function navigationSlider() {
-  const hamburgerMenu = document.querySelector(".hamburger-menu");
-  const nav = document.querySelector(".navbar-links");
   const navLinks = document.querySelectorAll(".navbar-links li");
   const navButton = document.querySelector(".nav-button");
 
@@ -17,15 +18,8 @@ function navigationSlider() {
       }
     });
 
-    // if (navButton.style.animation) {
-    //   navButton.style.animation = "";
-    // } else {
-    //   navButton.style.animation = `fadingNavLinks 0.5s ease forwards ${
-    //     6 / 7 + 0.7
-    //   }s`;
-    // }
-
     hamburgerMenu.classList.toggle("toggle");
   });
 }
 navigationSlider();
+x;
