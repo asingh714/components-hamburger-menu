@@ -165,13 +165,13 @@ body .main-nav .main-nav-links {
   flex-grow: 9;
 }
 body .main-nav .main-navbar-links {
-  flex-grow: 8;
+  flex-grow: 7;
 }
 body .main-nav .button-container {
-  flex-grow: 2;
+  flex-grow: 7;
 }
 body .main-nav .link {
   color: #1d1d1d;
   border-bottom: 1px solid transparent;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
 }
