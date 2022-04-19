@@ -2,8 +2,7 @@ function navigationSlider() {
   const hamburgerMenu = document.querySelector(".hamburger-menu");
   const nav = document.querySelector(".navbar-links");
   const navLinks = document.querySelectorAll(".navbar-links li");
-  // const navButton = document.querySelector(".nav-button");
-  const body = document.querySelector("body");
+  const navButton = document.querySelector(".nav-button");
 
   hamburgerMenu.addEventListener("click", () => {
     nav.classList.toggle("navbar-active");
@@ -22,7 +21,7 @@ function navigationSlider() {
     //   navButton.style.animation = "";
     // } else {
     //   navButton.style.animation = `fadingNavLinks 0.5s ease forwards ${
-    //     5 / 7 + 0.5
+    //     6 / 7 + 0.7
     //   }s`;
     // }
 

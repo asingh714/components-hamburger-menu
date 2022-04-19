@@ -94,9 +94,38 @@ body {
     border-bottom: @dark-purple solid 2px;
   }
 
+  .nav-button {
+    padding: 1.5rem;
+    background: linear-gradient(
+      to right,
+      @dark-purple-three 0%,
+      @dark-purple 100%
+    );
+    border: 1px solid transparent;
+    transition: all 0.3s;
+    border-radius: 5px;
+    &:hover {
+      box-shadow: 1px 3px 7px rgba(black, 0.25);
+      //   border: 1px solid @dark-purple;
+      //   background: @white;
+      //   color: @dark-purple;
+    }
+
+    .btn {
+      font-size: 1.8rem;
+      color: @white;
+      //   transition: all 0.3s;
+
+      // &:hover {
+      //   color: @dark-purple;
+      // }
+    }
+  }
+
   .hamburger-menu {
     cursor: pointer;
     display: none;
+    padding: 1rem;
     @media @large-875 {
       display: block;
     }

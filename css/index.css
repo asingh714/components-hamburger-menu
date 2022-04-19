@@ -211,9 +211,24 @@ body .link:hover {
 body .active-link {
   border-bottom: #4a154b solid 2px;
 }
+body .nav-button {
+  padding: 1.5rem;
+  background: linear-gradient(to right, #611f69 0%, #4a154b 100%);
+  border: 1px solid transparent;
+  transition: all 0.3s;
+  border-radius: 5px;
+}
+body .nav-button:hover {
+  box-shadow: 1px 3px 7px rgba(0, 0, 0, 0.25);
+}
+body .nav-button .btn {
+  font-size: 1.8rem;
+  color: #f4f4f4;
+}
 body .hamburger-menu {
   cursor: pointer;
   display: none;
+  padding: 1rem;
 }
 @media (max-width: 875px) {
   body .hamburger-menu {
