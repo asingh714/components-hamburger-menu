@@ -137,6 +137,11 @@ body {
 body {
   background-color: #f6efe8;
 }
+@media (max-width: 875px) {
+  body {
+    overflow-x: hidden;
+  }
+}
 body header {
   display: flex;
   justify-content: center;
@@ -154,15 +159,32 @@ body .main-nav {
 body .main-nav-links {
   flex-grow: 2;
 }
-body .main-navbar-links {
+body .navbar-links {
   display: flex;
   justify-content: space-between;
   align-items: center;
   align-self: flex-end;
 }
-body .hamburger-menu {
-  cursor: pointer;
-  display: none;
+@media (max-width: 875px) {
+  body .navbar-links {
+    background-color: #f4f4f4;
+    position: absolute;
+    right: -100%;
+    height: 100vh;
+    top: 0vh;
+    padding-top: 10vh;
+    padding-bottom: 5vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 33%;
+    transition: all 0.5s;
+  }
+}
+@media (max-width: 650px) {
+  body .navbar-links {
+    min-width: 50%;
+  }
 }
 body a {
   text-decoration: none;
@@ -175,6 +197,56 @@ body #main-logo {
   flex-grow: 3;
   font-size: 2.4rem;
 }
+@media (max-width: 875px) {
+  body .nav-li {
+    opacity: 0;
+  }
+}
 body .link {
   font-size: 1.8rem;
+}
+body .link:hover {
+  border-bottom: #4a154b solid 2px;
+}
+body .active-link {
+  border-bottom: #4a154b solid 2px;
+}
+body .hamburger-menu {
+  cursor: pointer;
+  display: none;
+}
+@media (max-width: 875px) {
+  body .hamburger-menu {
+    display: block;
+  }
+}
+body .hamburger-menu > div {
+  width: 2.5rem;
+  height: 0.2rem;
+  margin: 0.75rem;
+  background-color: #1d1d1d;
+  transition: all 0.3s;
+  z-index: 20;
+}
+body .toggle .line1 {
+  transform: rotate(-45deg) translate(-7px, 6px);
+}
+body .toggle .line2 {
+  opacity: 0;
+}
+body .toggle .line3 {
+  transform: rotate(45deg) translate(-7px, -6px);
+}
+body .navbar-active {
+  right: 0px;
+}
+@keyframes fadingNavLinks {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
 }
